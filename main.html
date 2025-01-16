@@ -16,16 +16,16 @@
 
     <script>
         function getFormvalue() {
-            // Accessing the form element
-            const form = document.getElementById('nameForm');
+    // Access the form element
+    const form = document.querySelector('form');
 
-            // Retrieving values of the input fields
-            const firstName = form.elements['firstName'].value;
-            const lastName = form.elements['lastName'].value;
+    // Get the first and last name inputs
+    const firstName = form.querySelector('input[name="firstName"]').value;
+    const lastName = form.querySelector('input[name="lastName"]').value;
 
-            // Displaying the concatenated full name
-            alert(`${firstName} ${lastName}`);
-        }
+    // Show an alert with the full name
+    alert(`${firstName} ${lastName}`);
+}
     </script>
 </body>
 </html>
